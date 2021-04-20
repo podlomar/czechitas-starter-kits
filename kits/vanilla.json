@@ -1,0 +1,6 @@
+[
+  { "from": ["package.json", "webpack.config.js"], "to": "" },
+  { "from": ["src/index.html", "src/index.js", "src/style.css"], "to": "src" },
+  { "from": "img/favicon.ico", "to": "src", "kit": "commons" },
+  { "from": "img/rocket.svg", "to": "src/img", "kit": "commons" }
+]
