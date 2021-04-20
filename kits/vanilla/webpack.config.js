@@ -3,7 +3,7 @@ const CopyPlugin = require('copy-webpack-plugin');
 
 module.exports = {
   mode: 'development',
-  entry: './src/index.jsx',
+  entry: './src/index.js',
   devtool: 'eval-source-map',
   output: {
     path: path.join(__dirname, 'dist'),
