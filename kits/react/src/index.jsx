@@ -3,9 +3,9 @@ import { render } from 'react-dom';
 import './style.css';
 
 const App = () => (
-  <div class="container">
+  <div className="container">
     <header>
-      <div class="logo"></div>
+      <div className="logo"></div>
       <h1>Webová aplikace</h1>
     </header>
     <main>
