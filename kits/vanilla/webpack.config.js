@@ -6,12 +6,12 @@ module.exports = {
   entry: './src/index.js',
   devtool: 'eval-source-map',
   output: {
-    path: path.join(__dirname, 'dist'),
+    path: path.join(__dirname, 'public'),
     filename: 'bundle.js',
     assetModuleFilename: 'img/[name]-[hash:6].[ext]'
   },
   devServer: {
-    static: path.join(__dirname, 'dist'),
+    static: path.join(__dirname, 'public'),
   },
   module: {
     rules: [
