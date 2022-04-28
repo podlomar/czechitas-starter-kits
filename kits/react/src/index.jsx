@@ -1,5 +1,5 @@
 import React from 'react';
-import { render } from 'react-dom';
+import { createRoot } from 'react-dom/client';
 import './style.css';
 
 const App = () => (
@@ -17,4 +17,6 @@ const App = () => (
   </div>
 );
 
-render(<App />, document.querySelector('#app'));
+createRoot(
+  document.querySelector('#app')
+).render(<App />, );

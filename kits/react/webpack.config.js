@@ -6,12 +6,13 @@ module.exports = {
   entry: './src/index.jsx',
   devtool: 'eval-source-map',
   output: {
-    path: path.join(__dirname, 'dist'),
+    path: path.join(__dirname, 'public'),
     filename: 'bundle.js',
+    assetModuleFilename: 'img/[name]-[hash:6].[ext]',
   },
   devServer: {
     historyApiFallback: true,
-    contentBase: path.join(__dirname, 'dist'),
+    static: path.join(__dirname, 'public'),
   },
   resolve: {
     extensions: ['.js', '.jsx'],
@@ -34,16 +35,8 @@ module.exports = {
       },
       {
         test: /\.(png|jpe?g|svg|gif)$/,
-        use: [
-          {
-            loader: 'file-loader',
-            options: {
-              name: '[name]-[hash:6].[ext]',
-              outputPath: 'img',
-            },
-          },
-        ],
-      },
+        type: 'asset/resource'
+      }
     ],
   },
   plugins: [
