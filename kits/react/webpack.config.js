@@ -12,7 +12,6 @@ module.exports = {
   },
   devServer: {
     historyApiFallback: true,
-    static: path.join(__dirname, 'public'),
   },
   resolve: {
     extensions: ['.js', '.jsx'],
@@ -42,9 +41,7 @@ module.exports = {
   plugins: [
     new CopyPlugin({
       patterns: [
-        { from: 'src/assets', to: 'assets', noErrorOnMissing: true },
-        { from: 'src/favicon.ico', to: '', noErrorOnMissing: true },
-        { from: 'src/index.html', to: '' },
+        { from: 'public', to: 'assets', noErrorOnMissing: true },
       ],
     }),
   ],
