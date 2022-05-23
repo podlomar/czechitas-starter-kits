@@ -10,9 +10,6 @@ module.exports = {
     filename: 'bundle.js',
     assetModuleFilename: 'img/[name]-[hash:6].[ext]'
   },
-  devServer: {
-    static: path.join(__dirname, 'public'),
-  },
   module: {
     rules: [
       {
@@ -28,9 +25,7 @@ module.exports = {
   plugins: [
     new CopyPlugin({
       patterns: [
-        { from: 'src/assets', to: 'assets', noErrorOnMissing: true },
-        { from: 'src/favicon.ico', to: '', noErrorOnMissing: true },
-        { from: 'src/index.html', to: '' },
+        { from: 'public', to: 'assets', noErrorOnMissing: true },
       ],
     }),
   ],
