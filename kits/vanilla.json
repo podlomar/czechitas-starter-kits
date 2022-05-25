@@ -2,7 +2,7 @@
   { "from": ["package.json", "webpack.config.js"], "to": "" },
   { "from": "_gitignore", "to": "", "name": ".gitignore", "kit": "commons" },
   { "from": ["src/index.js", "src/style.css"], "to": "src" },
-  { "from": "src/public/index.html", "to": "src/public" },
-  { "from": "img/favicon.ico", "to": "src/public", "kit": "commons" },
-  { "from": "img/rocket.svg", "to": "src/img", "kit": "commons" }
+  { "from": "public/index.html", "to": "public" },
+  { "from": "public/favicon.ico", "to": "public", "kit": "commons" },
+  { "from": "src/img/rocket.svg", "to": "src/img", "kit": "commons" }
 ]
