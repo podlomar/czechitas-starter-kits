@@ -19,6 +19,7 @@ module.exports = {
   ],
   rules: {
     'no-console': 'off',
+    'react/prop-typs': 'off',
     'arrow-body-style': 'off',
     'react/react-in-jsx-scope': 'off',
     'react/function-component-definition': ['error', {
@@ -27,13 +28,4 @@ module.exports = {
     }],
     '@typescript-eslint/explicit-function-return-type': 'error',
   },
-  // overrides: [{
-  //   files: ['*.ts', '*.tsx'],
-  //   parserOptions: {
-  //     project: './tsconfig.json',
-  //   },
-  //   rules: {
-  //     '@typescript-eslint/explicit-function-return-type': 'error',
-  //   },
-  // }],
 };

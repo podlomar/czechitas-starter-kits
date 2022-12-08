@@ -15,6 +15,7 @@ module.exports = {
   ],
   rules: {
     'no-console': 'off',
+    'react/prop-types': 'off',
     'arrow-body-style': 'off',
     'react/function-component-definition': ['error', {
       namedComponents: 'arrow-function',
