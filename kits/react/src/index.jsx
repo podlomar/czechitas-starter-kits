@@ -11,7 +11,7 @@ const App = () => {
       </header>
       <main>
         <p>
-          Startovací šablona pro webovou aplikaci v Reactu. Vytvořeno pomocí
+          Startovací šablona pro webovou aplikaci v Reactu. Vytvořeno pomocí{" "}
           <a href="https://www.npmjs.com/package/create-czechitas-app">create-czechitas-app</a>
           .
         </p>
